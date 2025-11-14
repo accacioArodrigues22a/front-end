@@ -9,7 +9,7 @@ async function signUpEagle() {
   const email = document.querySelector("#email").value
   const age = document.querySelector("#age").value
   const nickname = document.querySelector("#nickname").value
-  const passaword = document.querySelector("#passaword").value
+  const password = document.querySelector("#password").value
 
   if (name === "" || email === "" || age === "" || nickname === "") {
   alert("Preencha TODAS as informações!")
@@ -21,13 +21,13 @@ async function signUpEagle() {
   email,
   age,
   nickname,
-  passaword
+  password
 }
 
 console.log(user)
 
-const response = await fetch("http://localhost:3000/cadastrar", {
-    method: "post",
+const response = await fetch("http://localhost:3333/cadastrar", {
+    method: "POST",
 
     headers: {
         "Content-Type": "application/json"
@@ -35,5 +35,9 @@ const response = await fetch("http://localhost:3000/cadastrar", {
     body: JSON.stringify({ user })
   }).then(response => response.json())
 
-  alert(response.massage)
+  const { message } = response
+
+  alert(message)
+
+  window.location.href = "../index.html"
 }
