@@ -11,7 +11,7 @@ async function signUpEagle() {
   const nickname = document.querySelector("#nickname").value
   const password = document.querySelector("#password").value
 
-  if (name === "" || email === "" || age === "" || nickname === "") {
+  if (name === "" || email === "" || age === "" || nickname === "" || password === "") {
   alert("Preencha TODAS as informações!")
   return
  }
@@ -39,5 +39,5 @@ const response = await fetch("http://localhost:3333/cadastrar", {
 
   alert(message)
 
-  window.location.href = "../index.html"
+  window.location.href = "../../index.html"
 }
