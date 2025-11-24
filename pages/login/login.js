@@ -44,3 +44,4 @@ alert("Login realizado com sucesso!")
 
 window.location.href = "../../index.html"
 }
+
