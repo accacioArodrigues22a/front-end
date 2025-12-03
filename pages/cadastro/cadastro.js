@@ -26,7 +26,7 @@ async function signUpEagle() {
 
 console.log(user)
 
-const response = await fetch("https://back-end-zeta-bice.vercel.app/cadastrar", {
+const response = await fetch("https://backend-andressa.vercel.app/cadastrar", {
     method: "POST",
 
     headers: {

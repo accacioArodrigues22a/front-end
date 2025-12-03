@@ -1,5 +1,5 @@
  async function receiveData () {
-   const users =  await fetch ("https://back-end-zeta-bice.vercel.app/").then(response => response.json())
+   const users =  await fetch ("https://backend-andressa.vercel.app/").then(response => response.json())
  
    users.map(person => {
     document.querySelector("main").innerHTML += `

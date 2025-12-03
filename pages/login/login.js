@@ -19,7 +19,7 @@ async function login() {
 }
 
 
-const response = await fetch("https://back-end-zeta-bice.vercel.app/login", {
+const response = await fetch("https://backend-andressa.vercel.app/login", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
